@@ -1,0 +1,3 @@
+1.getParameter与getQueryString的区别？
+getParameter可以获取到get和post请求的参数
+getQueryString只能获取到get请求的参数
