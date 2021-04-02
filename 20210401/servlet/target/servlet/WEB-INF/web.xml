@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app> xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="true">
+
+
+  <servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>HelloServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
+//存储cookie
+  <servlet>
+    <servlet-name>setcookie</servlet-name>
+    <servlet-class>SetCookieServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>setcookie</servlet-name>
+    <url-pattern>/setcookie</url-pattern>
+  </servlet-mapping>
+
+
+//读取cookie
+  <servlet>
+    <servlet-name>getcookie</servlet-name>
+    <servlet-class>GetCookieServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>getcookie</servlet-name>
+    <url-pattern>/getcookie</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>sess</servlet-name>
+    <servlet-class>MySessionServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>sess</servlet-name>
+    <url-pattern>/sess</url-pattern>
+  </servlet-mapping>
+
+  //文件上传
+  <servlet>
+    <servlet-name>upload</servlet-name>
+    <servlet-class>MyUploadServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>upload</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+
+</web-app>

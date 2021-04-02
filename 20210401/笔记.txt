@@ -1,0 +1,16 @@
+1.cookie的本质
+
+2.usernameCookie.setMaxAge(60);
+当值为-1的时候表示永不
+3.session会话（保存在服务器端）
+4.session和cookie的区别
+     存储机制是不一样的，cookie是浏览器端实现的会话保持，session是服务器端实现的会话保持
+     cookie是有大小限制的，一般是4K，而session是没有大小限制
+     session相比于cookie来说更加的安全，因为cookie可以在浏览器端被篡改
+5.文件上传
+6.内存特性：操作速度快，但是数据在重启之后就会消失
+   磁盘：操作速度慢，它的数据保持一致
+7.session持久化的问题
+8.热部署（热加载）
+    作用：实现代码修改之后自动更新
+
