@@ -1,0 +1,12 @@
+1.json（前后端）
+  是一种轻量级的数据交换格式
+  使用格式：
+    使用{}包裹，{}表示是一个对象，里面会有多个属性，多个属性是以key，value键值对的形式出现的，多个键值对使用，隔开
+2.Ajax使用
+  jQuery.getJSON("后端接口地址url",{"username": "root","pwd": "root"},function(data){});
+3.知名的json库
+  fastjson：阿里巴巴（有漏洞、跨语言json支持不是很好）
+  gson：Google（性能低）
+  jackson
+4.jackson的使用
+  

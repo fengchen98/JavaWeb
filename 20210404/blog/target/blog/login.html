@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script>
+        function mysub(type) {
+            var username=jQuery("#username");
+            var password=jQuery("#password");
+            if (type==2) {
+                if (confirm("确认清除？")) {
+                    username.val("");
+                    password.val("");
+                }
+                return false;
+            }
+
+                if (username.val().trim()==""){
+                    alert("请先输入用户名");
+                    username.focus();
+                    return false;
+                }
+                if(password.val().trim()==""){
+                    // 密码没有输入
+                    alert("请先输入密码！");
+                    password.focus();
+                    return  false;
+                }
+                jQuery.getJSON("login",{
+                    "username": username.val(),
+                    "password": password.val()
+                },function (data) {
+                    if (data!=null && data.succ==1){
+                        location.href = "myartlist.html";
+                    }else {
+                        alert("登录失败"+data.msg);
+                    }
+                });
+
+        }
+    </script>
+</head>
+<body>
+<div style="margin-top: 70px;text-align: center;">
+    <h1>登录功能</h1>
+    用户名：<input id="username" name="username" type="text">
+    <p></p>
+    密&nbsp;&nbsp;码：<input id="password" name="password" type="password">
+    <p></p>
+    <input type="button" onclick="mysub(1)" value=" 提 交 ">
+    <input type="button" onclick="mysub(2)" value=" 清 空 ">
+</div>
+</body>
+</html>

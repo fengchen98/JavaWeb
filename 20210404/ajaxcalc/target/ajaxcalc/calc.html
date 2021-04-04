@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="jquery-1.9.1.min.js"></script>
+
+    <script>
+        function mysub() {
+            // todo:非空效验
+            jQuery.getJSON("mycalc",{
+                "number1":jQuery("#num1").val(),
+                "number2":jQuery("#num2").val()
+            },function (data) {
+                if(data!=null && data.state==200){
+                    // 接收后端的响应信息
+                    alert(data.sum);
+                }else{
+                    alert(data.msg);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<div style="margin-top: 70px;text-align: center;">
+    <h1>我的计算器——Ajax版本</h1>
+    数字1：<input id="num1" name="num1" type="number"><p></p>
+    数字2：<input id="num2" name="num2" type="number"><p></p>
+    <input type="button" value=" 提 交 " onclick="mysub()">
+
+</div>
+</body>
+</html>
