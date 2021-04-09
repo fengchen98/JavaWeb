@@ -6,21 +6,23 @@
     <script src="jquery-1.9.1.min.js"></script>
     <script>
 
-
-        function mydel(id){
-            if (confirm("确认删除？")){
-                jQuery.getJSON("mydel",{"id":id},function (data) {
-                    if (data!=null && data.succ==1){
-                        alert("操作成功！！！");
-                        location.href=location.href;
-                    }else {
-                        alert("操作失败："+data.msg);
+        // 文章删除
+        function mydel(id) {
+            if (confirm("确认删除？")) {
+                // 调用删除方法，执行文章删除功能
+                jQuery.getJSON("mydel", {"id": id}, function (data) {
+                    if (data != null && data.succ == 1) {
+                        // 文章删除成功
+                        alert("恭喜：操作成功！");
+                        // 页面刷新
+                        location.href = location.href;
+                    } else {
+                        alert("抱歉操作失败：" + data.msg);
                     }
-
                 });
             }
-
         }
+
         jQuery(function () {
             // 当页面加载完成之后在执行此方法
 
@@ -64,7 +66,7 @@
     <h1>我的文章列表</h1>
     <a href="addart.html">添加文章</a>
     <hr>
-    <table id="tab1" style="width: 80%;margin-left: 100px;" border="1">
+    <table id="tab1" style="width: 80%;margin:auto;" border="1">
         <tr>
             <td>
                 编号
