@@ -37,11 +37,17 @@
                 password2.focus();
                 return  false;
             }
+            if (password.val()!=password2.val()){
+                alert("两次输入密码不一致！");
+                password2.focus();
+                return  false;
+            }
             // 2.使用 ajax 请求后端接口
             jQuery.getJSON(
                 "reg",{"username":username.val(),"password":password.val()},function (data) {
                     if (data!=null && data.succ!=null && data.succ==1){
                         alert("恭喜你，注册成功");
+                        location.href="login.html";
                     }else {
                         alert("抱歉，注册失败"+data.msg);
                     }
@@ -56,7 +62,7 @@
     <h1>注册</h1>
     &nbsp;&nbsp;用户名：<input id="username" name="username" type="text"><p></p>
     &nbsp;&nbsp;&nbsp;&nbsp;密&nbsp;&nbsp;码：<input id="password" name="password" type="password"><p></p>
-    确认密码：<input id="password2" name="password2" type="password"><p></p>l
+    确认密码：<input id="password2" name="password2" type="password"><p></p>
     <input onclick="mysub(1)" type="button" value=" 提 交 ">
     <input onclick="mysub(2)" type="button" value=" 清 空 ">
 
