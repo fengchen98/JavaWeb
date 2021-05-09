@@ -90,4 +90,60 @@ synchronized和lock的区别：
   1.synchronized既可以修饰代码块又可以修饰静态方法或普通方法，而lock只能修饰代码块
   2.synchronized只有非公平锁的锁策略，而lock既可以是非公平锁的锁策略也可使是公平锁的锁策略
   3.Reentrantlock更加的灵活
-  4.2.synchronized是自动加锁和释放锁的，而lock需要自己手动加锁和释放锁
+  4.synchronized是自动加锁和释放锁的，而lock需要自己手动加锁和释放锁
+synchronized实现的原理：
+  从操作系统来说：互斥锁
+  从JVM来说：帮我们实现了监视器的加锁和解锁操作
+  从JAVA来说：锁对象 锁存放在变量的对象头
+synchronized的优化：（四种状态）
+  无锁、偏向锁、轻量级锁、重量级锁
+线程的状态：
+	new（新建状态）
+	runnable（执行状态）{running、ready}
+	waiting（等待状态）
+	timed-waiting（超时等待状态）有明确结束等待时间的sleep方法
+	blocked（阻塞状态）  当拿到锁之后会进入runnable状态
+	timinated（终止状态）
+死锁：
+    定义：在多线程编程中，因为资源抢占而造成线程无限等待
+造成死锁的四个条件（同时满足）：
+    1.互斥条件（一个资源只能被一个线程持有）
+    2.请求拥有条件（当拥有有一个资源之后试图请求另外一个资源）
+    3.不可剥夺条件（一个资源在被线程拥有之后，不能被其他线程剥夺）
+    4.环路等待条件（多个线程在获取资源的时候形成了一个环形链）
+解决死锁可以通过修改请求的顺序
+
+线程的通讯机制：一个线程的动作可以让另外一个线程感知到
+    wait（休眠）/notify（唤醒）/notifyall（唤醒全部）
+wait为什么要加锁？
+    答：wait在使用的时候需要释放锁，释放之前必须有一把锁
+wait为什么要释放锁？
+    答：wait默认是不传值的，当不传递任何值的时候表示永久等待，这样会造成一把锁被一个线程一直持有
+ wait（休眠）/notify（唤醒）/notifyall（唤醒全部）使用注意事项：
+    1.使用时必须加锁
+    2.加锁对象和 wait/notify/notifyall的对象必须保持一致
+    3.一组wait/notify/notifyall的对象必须保持一致
+Thread.sleep(0) 和 wait(0)的区别
+    1.sleep他是Thread的静态方法，而wait是object的方法
+    2.sleep(0)立即触发一次CPU的资源抢占，wait(0)则永久等待下去
+wait和sleep的区别
+相同点：1.都可以让当前线程休眠
+              2.都必须要处理一个Interrupt异常
+不同点：1.wait来自object中的一个方法，而sleep来自thread
+	2.传参不同，wait可以没有参数而sleep必须有一个大于0的参数
+	3.wait使用时必须加锁，sleep使用时不用加锁
+	4.wait使用时会释放锁，而sleep不会释放
+	5.wait默认不传参的情况会进入waiting状态，而sleep会进入timed-waiting
+为什么wait放在object而不是Thread中
+答：wait必须要加锁和释放锁，而锁是属于对象级别的而非线程级别
+（线程和锁是一对多的关系，也就是一个线程可以拥有多把锁）
+  为了灵活起见，就把wait放在object当中
+
+Locksupport.park()  也可以进行线程休眠
+LockSupport.unpark(线程名);    唤醒
+
+Locksupport.park() 和lock.wait()的区别
+    相同点：1.都可以休眠
+	2.都可以传参或者不传参，并且二者的线程状态也是一样的
+    不同点：1.wait必须加锁，而Locksupport.park不需要加锁
+	2.wait只能唤醒全部或随机的一个线程，而Locksupport.park可以唤醒指定的线程
