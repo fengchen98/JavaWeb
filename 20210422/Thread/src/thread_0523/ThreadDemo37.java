@@ -1,0 +1,26 @@
+package thread_0523;
+
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+/**
+ * @program: Thread
+ * @description:
+ * @author: FENG CHEN
+ * @create: 2021-05-23 09:59
+ */
+public class ThreadDemo37 {
+    public static void main(String[] args) {
+        ThreadPoolExecutor executor=new ThreadPoolExecutor(5,5,0, TimeUnit.SECONDS,new LinkedBlockingDeque<>(5),new ThreadPoolExecutor.AbortPolicy());
+        for (int i = 0; i < 11; i++) {
+            int finalI=i;
+            executor.execute(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println("任务："+finalI+"线程名："+Thread.currentThread().getName());
+                }
+            });
+        }
+    }
+}

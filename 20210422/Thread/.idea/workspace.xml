@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a39c2d87-3e5c-482d-b74c-0876ac8016da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo36.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo37.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo38.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo39.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo40.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo41.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo42.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo43.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo44.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo45.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo46.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo47.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo48.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo49.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo50.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/thread_0523/ThreadDemo51.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chatroom/src/main/java/org/example/util/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../笔记.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../笔记.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1rWhGhBKcx2mpXN8FAq7jrC3zrE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="thread_0523" />
+      <recent name="thread_0509" />
+      <recent name="thread_0428" />
+      <recent name="thread_0425" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ThreadDemo50">
+    <configuration name="ThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread_0523.ThreadDemo" />
+      <module name="Thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread_0523.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadDemo47" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread_0523.ThreadDemo47" />
+      <module name="Thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread_0523.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadDemo48" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread_0523.ThreadDemo48" />
+      <module name="Thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread_0523.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadDemo50" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread_0523.ThreadDemo50" />
+      <module name="Thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread_0523.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadDemo51" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="thread_0523.ThreadDemo51" />
+      <module name="Thread" />
+      <option name="VM_PARAMETERS" value="-Xmx5m" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="thread_0523.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ThreadDemo" />
+      <item itemvalue="Application.ThreadDemo47" />
+      <item itemvalue="Application.ThreadDemo48" />
+      <item itemvalue="Application.ThreadDemo51" />
+      <item itemvalue="Application.ThreadDemo50" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ThreadDemo50" />
+        <item itemvalue="Application.ThreadDemo51" />
+        <item itemvalue="Application.ThreadDemo" />
+        <item itemvalue="Application.ThreadDemo48" />
+        <item itemvalue="Application.ThreadDemo47" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a39c2d87-3e5c-482d-b74c-0876ac8016da" name="Default Changelist" comment="" />
+      <created>1619097660530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619097660530</updated>
+      <workItem from="1619097671807" duration="26994000" />
+      <workItem from="1621566021549" duration="15388000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621761595838">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1621761595838" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1621756208194">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1621756208194" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1620720407973">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620720407973" />
+    <state width="1493" height="190" key="GridCell.Tab.0.bottom" timestamp="1621761562235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="190" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621761562235" />
+    <state width="1493" height="190" key="GridCell.Tab.0.center" timestamp="1621761562235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="190" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621761562235" />
+    <state width="1493" height="190" key="GridCell.Tab.0.left" timestamp="1621761562235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="190" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621761562235" />
+    <state width="1493" height="190" key="GridCell.Tab.0.right" timestamp="1621761562235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="190" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621761562235" />
+    <state width="679" height="258" key="GridCell.Tab.1.bottom" timestamp="1620720422850">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="679" height="258" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620720422850" />
+    <state width="679" height="258" key="GridCell.Tab.1.center" timestamp="1620720422850">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="679" height="258" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1620720422850" />
+    <state width="679" height="258" key="GridCell.Tab.1.left" timestamp="1620720422850">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="679" height="258" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1620720422850" />
+    <state width="679" height="258" key="GridCell.Tab.1.right" timestamp="1620720422850">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="679" height="258" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1620720422850" />
+    <state x="540" y="57" key="SettingsEditor" timestamp="1620217405986">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620217405986" />
+  </component>
+</project>
